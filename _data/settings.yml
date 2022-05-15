@@ -1,0 +1,15 @@
+---
+#-------------------------------
+# General Site Settings
+
+title: Tomás Santos
+logo:
+description: this is meta description
+email: tomaacs2000@gmail.com
+phone: +351 961 013 815
+copyright: Copyright &copy; 2022 Designed and Developed by Tomás Santos™.
+
+menu:
+  - { name: About, link: "/about" }
+  - { name: Portfolio, link: "/portfolio" }
+  - { name: Contact, link: "/contact" }

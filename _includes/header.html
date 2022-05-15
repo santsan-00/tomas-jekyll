@@ -1,0 +1,39 @@
+<header>
+  <nav>
+    <a href="{{ site.baseurl }}/">
+      {% if site.data.settings.logo %}
+      <img
+        src="{{ site.data.settings.logo | absolute_url }}"
+        alt="{{ site.data.settings.title }}"
+      />
+      {% else if %}
+      <h3 class="text-white font-tertiary">{{site.data.settings.title}}</h3>
+      {% endif %}
+    </a>
+    <!-- Menu Button -->
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navigation"
+      aria-controls="navigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <div>
+      <ul>
+        <li>
+          <a href="{{ site.baseurl }}/">Home</a>
+        </li>
+        {% for link in site.data.settings.menu %}
+        <li>
+          <a href="{{ link.link }}">{{ link.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
