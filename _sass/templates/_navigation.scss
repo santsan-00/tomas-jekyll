@@ -1,32 +1,23 @@
-.navigation {
-  padding: 40px 130px;
-  transition: 0.3s ease;
-  &.nav-bg {
-    background-color: $primary-color;
-    padding: 15px 100px;
-    @include desktop {
-      padding: 15px 20px;
-    }
-  }
-  @include desktop {
-    padding: 20px;
-    background: $primary-color;
-  }
+header {
+  position: sticky;
+  top: 0;
 }
 
-.navbar {
-  .nav-item {
-    .nav-link {
-      font-family: $secondary-font;
-      text-transform: uppercase;
-      padding: 15px;
-    }
-    &.active {
-      font-weight: bold;
-    }
-  }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: $white;
+nav button {
+  display: none;
+}
+
+/* .menu_wrapper {
+
+} */
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
 }

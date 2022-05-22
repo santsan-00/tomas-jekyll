@@ -1,0 +1,21 @@
+<article>
+  <!-- <img
+    src="{{ post.image | relative_url }}"
+    alt="{{ post.title }}"
+  /> -->
+  <div>
+    <h4>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h4>
+    <p>
+      {% assign curlyend = '}' %}{{ post.excerpt | markdownify | strip_html |
+      replace: "{% include JB/setup %", "" | replace: curlyend, "" |
+      truncatewords: 30 }}
+    </p>
+    <button>
+      <a href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary"
+        >Read More</a
+      >
+    </button>
+  </div>
+</article>

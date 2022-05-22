@@ -1,15 +1,17 @@
 // Color Variables
-$primary-color: #41228e;
-$secondary-color: #2bfdff;
-$text-color: #4c4c4c;
-$text-color-dark: #000;
-$text-color-light: #999;
-$body-color: #fff;
-$border-color: #c7c7c7;
-$black: #000;
-$white: #fff;
-$gray: #eaeaea;
+$bg-color: rgb(255, 250, 240);
+$text-color: rgb(19, 19, 19);
+
+//Spacings and Margins
+$spa-8: 8px;
+$spa-16: 16px;
+$spa-24: 24px;
+$spa-32: 32px;
+
+$mar-16: 1rem;
+$mar-24: 2rem;
+$mar-32: 3rem;
+$mar-40: 4rem;
 
 // Font Variables
-$primary-font: "Roboto", sans-serif;
-$secondary-font: "Playfair Display", serif;
+$primary-font: "Poppins", sans-serif;
