@@ -2,3 +2,6 @@
 layout: home
 title: Homepage
 ---
+
+{% for post in site.posts offset:0 limit:3 %} {% include post.html %} {%
+endfor%}

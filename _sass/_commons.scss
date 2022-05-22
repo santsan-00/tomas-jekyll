@@ -7,3 +7,12 @@ ul,
 ol {
   list-style: none;
 }
+
+img {
+  border: 2px $text-color;
+}
+
+.logo {
+  width: $mar-40;
+  height: $mar-40;
+}
