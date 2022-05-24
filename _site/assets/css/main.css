@@ -1,3 +1,4 @@
+/* * { box-sizing: border-box; margin: 0; padding: 0; } */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body { background-color: floralwhite; overflow-x: hidden; }
 
@@ -28,15 +29,18 @@ h5 { font-size: 20px; }
 
 h6 { font-size: 16px; }
 
-header { position: sticky; top: 0; }
+header { position: sticky; top: 0; background-color: floralwhite; }
 
 nav { display: flex; align-items: center; justify-content: space-between; }
 
-nav button { display: none; }
+.hamburguer { width: 4rem; height: 4rem; background: red; z-index: 9; }
 
-/* .menu_wrapper {
+.menu_wrapper { position: fixed; top: 0; left: 0; display: flex; align-items: center; flex-flow: column nowrap; width: 100%; }
 
-} */
-nav ul { display: flex; flex-flow: row nowrap; }
+.closed { display: none; }
+
+nav ul { display: flex; flex-flow: row nowrap; padding: 0; }
+
+@media screen and (min-width: 480px) { .hamburguer { display: none; } .menu_wrapper { position: static; display: flex; align-items: center; flex-flow: row wrap; width: auto; } }
 
 /*# sourceMappingURL=main.css.map */
