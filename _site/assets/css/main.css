@@ -1,10 +1,11 @@
-/* * { box-sizing: border-box; margin: 0; padding: 0; } */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body { background-color: floralwhite; overflow-x: hidden; }
 
 ul, ol { list-style: none; }
 
-img { border: 2px #131313; }
+img { object-fit: fill; margin: auto; }
 
 .logo { width: 4rem; height: 4rem; }
 
@@ -42,5 +43,9 @@ nav { display: flex; align-items: center; justify-content: space-between; }
 nav ul { display: flex; flex-flow: row nowrap; padding: 0; }
 
 @media screen and (min-width: 480px) { .hamburguer { display: none; } .menu_wrapper { position: static; display: flex; align-items: center; flex-flow: row wrap; width: auto; } }
+
+h1 { font-size: 32px; }
+
+h2 { font-size: 24px; }
 
 /*# sourceMappingURL=main.css.map */
