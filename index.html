@@ -3,5 +3,12 @@ layout: home
 title: Homepage
 ---
 
-{% for post in site.posts offset:0 limit:3 %} {% include post.html %} {% endfor
-%}
+<section class="portfolio">
+  {% for post in site.posts offset:0 limit:3 %}
+    {% include post.html %}
+  {% endfor %}
+  <div>
+    <h3>See More Projects</h3>
+    <button><a href="/portfolio">Portfolio</button>
+  </div>
+</section>

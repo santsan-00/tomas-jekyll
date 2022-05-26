@@ -3,4 +3,17 @@ layout: default
 title: Contact
 ---
 
-<h1>{{ page.title }}</h1>
+<div>
+  <h1>Let's Connect!</h1>
+  <ul>
+    {% for link in site.data.settings.social %}
+    <li>
+      <i>{{ site.data.settings.social.svg }}</i>
+      <a href="{{ site.data.settings.social.link }}"
+        >{{ site.data.settings.social.username }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<img src="/assets/images/contact.jpg" alt="" />

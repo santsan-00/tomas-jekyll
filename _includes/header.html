@@ -16,11 +16,11 @@
 
     <ul class="closed menu_wrapper">
       <li>
-        <a class="nav_link" href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/">Home</a>
       </li>
       {% for link in site.data.settings.menu %}
       <li>
-        <a class="nav_link" href="{{ link.link }}">{{ link.name }}</a>
+        <a href="{{ link.link }}">{{ link.name }}</a>
       </li>
       {% endfor %}
     </ul>

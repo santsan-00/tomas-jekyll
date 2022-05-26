@@ -8,38 +8,54 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: $nav_height;
 }
 
+.logo {
+  margin: 0 $mar-16;
+  width: $mar-40;
+  height: $mar-40;
+  border: none;
+}
+
+//Hamburguer
 .hamburguer {
   width: $mar-40;
   height: $mar-40;
   background: red;
   z-index: 9;
+  margin: 0 $mar-16;
 }
+
+// Lista da Nav
 
 .menu_wrapper {
   position: fixed;
-  top: 0;
+  top: $nav_height;
   left: 0;
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
   width: 100%;
+  background-color: $bg-color;
 }
 
 .closed {
   display: none;
 }
 
-nav ul {
-  display: flex;
-  flex-flow: row nowrap;
-  padding: 0;
+nav ul li {
+  padding: $mar-16;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
+  .logo {
+    margin: 0 $mar-24;
+  }
+
   .hamburguer {
     display: none;
+    margin: 0 $mar-24;
   }
 
   .menu_wrapper {

@@ -1,0 +1,43 @@
+.hero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 24px;
+  height: auto;
+
+  p {
+    font-size: 24px;
+  }
+}
+
+.text_wrapper {
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: none;
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    flex-direction: row;
+    padding: 0;
+    border: none;
+    border-top: $img_border solid $text-color;
+    border-bottom: $img_border solid $text-color;
+    height: 90vh;
+  }
+
+  .hero img {
+    width: 40%;
+    height: 100%;
+    border: none;
+    border-left: $img_border solid $text-color;
+  }
+
+  .text_wrapper {
+    padding: $mar-32;
+  }
+}

@@ -15,11 +15,23 @@ ol {
 }
 
 img {
-  object-fit: fill;
-  margin: auto;
+  object-fit: cover;
+  width: 100%;
+  border: $img_border solid $text-color;
 }
 
-.logo {
-  width: $mar-40;
-  height: $mar-40;
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 24px;
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $mar-40;
+    margin: $mar-40;
+  }
 }

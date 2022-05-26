@@ -11,7 +11,7 @@ body {
 
 p {
   line-height: 1.8;
-  font-family: $primary-font;
+  margin-bottom: 16px;
 }
 
 a {
@@ -23,15 +23,16 @@ a {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 48px;
+  margin-bottom: 24px;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 h4 {

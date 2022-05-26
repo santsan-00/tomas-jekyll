@@ -1,18 +1,22 @@
 <article>
-  <!-- <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" /> -->
-  <div>
+  <img
+    class="thumb"
+    src="{{ post.image | relative_url }}"
+    alt="{{ post.title }}"
+  />
+  <div class="post_description">
     <h4>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h4>
     <p>
       {% assign curlyend = '}' %}{{ post.excerpt | markdownify | strip_html |
       replace: "{% include JB/setup %", "" | replace: curlyend, "" |
-      truncatewords: 30 }}
+      truncatewords: 15 }}
     </p>
     <button>
-      <a href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary"
-        >Read More</a
-      >
+      <a href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary">
+        Read More
+      </a>
     </button>
   </div>
 </article>

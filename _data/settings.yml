@@ -15,12 +15,19 @@ menu:
   - { name: Contact, link: "/contact" }
 
 social:
-  - { name: Instagram, link: "https://www.instagram.com/santsan00/", svg: "" }
   - {
-      name: LinkedIn,
+      name: instagram,
+      username: "@santsan00",
+      link: "https://www.instagram.com/santsan00/",
+      svg: "",
+    }
+  - {
+      name: linkedin,
+      username: "@omassantos7",
       link: "https://www.linkedin.com/in/tom%C3%A1s-santos-7b438322b/",
       svg: "",
     }
+  - { name: email, username: "tomaacs2000@gmail.com", svg: "" }
 
 ---
 
