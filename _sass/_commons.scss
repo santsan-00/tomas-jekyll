@@ -20,11 +20,42 @@ img {
   border: $img_border solid $text-color;
 }
 
+.svg {
+  border: none;
+}
+
+.logo {
+  width: $spa-40;
+  height: $spa-40;
+  border: none;
+
+  &_footer {
+    @extend .logo;
+    width: $spa-40;
+    height: $spa-40;
+  }
+}
+
 .portfolio {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
   gap: 24px;
   margin: 24px;
+}
+
+.article_post {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: $spa-24;
+  height: 20vh;
 }
 
 @media screen and (min-width: 600px) {
@@ -33,5 +64,19 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: $mar-40;
     margin: $mar-40;
+  }
+
+  .logo {
+    &_footer {
+      width: $mar-24;
+      height: $mar-24;
+    }
+  }
+
+  footer {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $mar-24;
   }
 }

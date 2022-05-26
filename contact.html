@@ -2,18 +2,50 @@
 layout: default
 title: Contact
 ---
-
+<img src="/assets/images/contact.jpg" alt="" />
 <div>
   <h1>Let's Connect!</h1>
-  <ul>
-    {% for link in site.data.settings.social %}
-    <li>
-      <i>{{ site.data.settings.social.svg }}</i>
-      <a href="{{ site.data.settings.social.link }}"
-        >{{ site.data.settings.social.username }}</a
-      >
-    </li>
-    {% endfor %}
-  </ul>
+  <div>
+    <ul>
+      {% for link in site.data.settings.social %}
+      <li>
+        <img class='svg' src='{{ link.svg }}' />
+        <a href="{{ link.link }}"
+          >{{ link.username }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2>Contact Form</h4>
+    <form>
+      <label>Full Name
+        <input 
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+        />
+      </label>
+      <label>
+        Email
+        <input
+          type="email"
+          id="email"
+          name="_replyto"
+          placeholder="Email Address"
+        />
+      </label>
+      <label>
+        Write your message...
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Type Message Here"
+          ></textarea>
+      </label>
+          <button type="submit">Send Submission</button>
+        </div>
+    </form>
 </div>
-<img src="/assets/images/contact.jpg" alt="" />

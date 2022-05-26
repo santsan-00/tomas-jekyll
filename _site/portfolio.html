@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>Portfolio - </title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Portfolio - </title>
+  <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+
   <body>
 
-    <header>
+    <header id="header">
   <nav>
     <a href="/">
       
       <img
         class="logo"
-        src="http://localhost:4000/assets/images/logo.svg"
+        src="/assets/images/logo.svg"
         alt="Tomás Santos"
       />
       
@@ -47,15 +51,15 @@
     <h1>Portfolio</h1>
 
 <section class="portfolio">
-   <article>
+   <article class="article_post">
   <img
     class="thumb"
     src="/assets/images/portfolio/AKA/AKAThumb.png"
-    alt="AKA: Hown Can I Help You?"
+    alt="AKA: How Can I Help You?"
   />
   <div class="post_description">
     <h4>
-      <a href="/2017/05/26/aka-how-can-i-help-you.html">AKA: Hown Can I Help You?</a>
+      <a href="/2017/05/26/aka-how-can-i-help-you.html">AKA: How Can I Help You?</a>
     </h4>
     <p>
       Adaptation is a recurrent practice in cinema and theatre, and corresponds to the use of...
@@ -63,7 +67,7 @@
     <a href="/2017/05/26/aka-how-can-i-help-you.html" class="post_link"> Read More </a>
   </div>
 </article>
-  <article>
+  <article class="article_post">
   <img
     class="thumb"
     src="/assets/images/portfolio/belas/belasThumb.jpg"
@@ -79,7 +83,7 @@
     <a href="/2017/05/26/belas-artes.html" class="post_link"> Read More </a>
   </div>
 </article>
-  <article>
+  <article class="article_post">
   <img
     class="thumb"
     src="/assets/images/portfolio/focus/focusThumb.png"
@@ -95,7 +99,7 @@
     <a href="/2017/05/26/netflix-focus.html" class="post_link"> Read More </a>
   </div>
 </article>
-  <article>
+  <article class="article_post">
   <img
     class="thumb"
     src="/assets/images/portfolio/TTR/TTRThumb.png"
@@ -111,7 +115,7 @@
     <a href="/2017/05/26/ttr.html" class="post_link"> Read More </a>
   </div>
 </article>
-  <article>
+  <article class="article_post">
   <img
     class="thumb"
     src="/assets/images/portfolio/BET/BETThumb.png"
@@ -127,7 +131,7 @@
     <a href="/2017/05/26/bet.html" class="post_link"> Read More </a>
   </div>
 </article>
-  <article>
+  <article class="article_post">
   <img
     class="thumb"
     src="/assets/images/portfolio/Web/webThumb.png"
@@ -148,44 +152,17 @@
 
 
     <footer>
-  <div>
-    <h2>Contact Form</h4>
-    <form>
-      <div>
-        <input type="text" id="name" name="name" placeholder="Full Name" />
-      </div>
-      <div>
-        <input
-          type="email"
-          id="email"
-          name="_replyto"
-          placeholder="Email Address"
-        />
-      </div>
-      <div>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Type Message Here"
-        ></textarea>
-      </div>
-      <div>
-        <button type="submit">send</button>
-      </div>
-    </form>
-  </div>
-  <div>
-    <h2>Social Media</h2>
-    <ul>
-      <li>
-        <a href="">Instagram</a>
-      </li>
-      <li>
-        <a href="">LinkedIn</a>
-      </li>
-    </ul>
-  </div>
+  <a href="/about">Copywright® Tomás Santos</a>
+  <img class="logo_footer" src="/assets/images/logo.svg" />
+  <a id="backtotop">Back to Top ↑</a>
 </footer>
+
+<script>
+  const backtotop = document.getElementById("backtotop");
+  backtotop.addEventListener("click", () =>
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  );
+</script>
 
   
   <script src="../assets/js/hamburguer.js"></script>

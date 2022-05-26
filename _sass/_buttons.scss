@@ -16,3 +16,8 @@
     box-shadow: 4px 4px 0 $text-color;
   }
 }
+
+.card_link {
+  @extend .post_link;
+  width: 100%;
+}

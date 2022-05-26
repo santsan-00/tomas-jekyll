@@ -2,6 +2,7 @@ header {
   position: sticky;
   top: 0;
   background-color: $bg-color;
+  padding: 0 $spa-16;
 }
 
 nav {
@@ -11,24 +12,15 @@ nav {
   height: $nav_height;
 }
 
-.logo {
-  margin: 0 $mar-16;
-  width: $mar-40;
-  height: $mar-40;
-  border: none;
-}
-
 //Hamburguer
 .hamburguer {
-  width: $mar-40;
-  height: $mar-40;
+  width: $spa-40;
+  height: $spa-40;
   background: red;
   z-index: 9;
-  margin: 0 $mar-16;
 }
 
 // Lista da Nav
-
 .menu_wrapper {
   position: fixed;
   top: $nav_height;
@@ -45,17 +37,20 @@ nav {
 }
 
 nav ul li {
-  padding: $mar-16;
+  padding: $spa-16;
 }
 
 @media screen and (min-width: 600px) {
+  header {
+    padding: 0 $mar-16;
+  }
+
   .logo {
     margin: 0 $mar-24;
   }
 
   .hamburguer {
     display: none;
-    margin: 0 $mar-24;
   }
 
   .menu_wrapper {

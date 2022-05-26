@@ -1,9 +1,6 @@
 ---
-#-------------------------------
-# General Site Settings
-
 title: Tomás Santos
-logo: "../assets/images/logo.svg"
+logo: "logo.svg"
 description: this is meta description
 email: tomaacs2000@gmail.com
 phone: +351 961 013 815
@@ -23,7 +20,7 @@ social:
     }
   - {
       name: linkedin,
-      username: "@omassantos7",
+      username: "@tomassantos7",
       link: "https://www.linkedin.com/in/tom%C3%A1s-santos-7b438322b/",
       svg: "",
     }

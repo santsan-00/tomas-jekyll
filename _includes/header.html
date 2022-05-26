@@ -1,10 +1,10 @@
-<header>
+<header id="header">
   <nav>
     <a href="{{ site.baseurl }}/">
       {% if site.data.settings.logo %}
       <img
         class="logo"
-        src="{{ site.data.settings.logo | absolute_url }}"
+        src="/assets/images/{{ site.data.settings.logo }}"
         alt="{{ site.data.settings.title }}"
       />
       {% else if %}
