@@ -1,7 +1,17 @@
 .thumb {
-  height: 70%;
+  height: none;
 }
 
 .post_description {
-  height: 30%;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .thumb {
+    height: 70%;
+  }
+
+  .post_description {
+    height: 30%;
+  }
 }

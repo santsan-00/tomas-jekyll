@@ -13,10 +13,6 @@
       replace: "{% include JB/setup %", "" | replace: curlyend, "" |
       truncatewords: 15 }}
     </p>
-    <button>
-      <a href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary">
-        Read More
-      </a>
-    </button>
+    <a href="{{ post.url | relative_url }}" class="post_link"> Read More </a>
   </div>
 </article>

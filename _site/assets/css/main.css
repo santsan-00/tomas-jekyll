@@ -32,6 +32,10 @@ h5 { font-size: 20px; }
 
 h6 { font-size: 16px; }
 
+.post_link { border: none; padding: 8px 16px; background-color: #131313; font-family: "Poppins", sans-serif; color: floralwhite; }
+
+@media screen and (min-width: 600px) { .post_link { padding: 0.5rem 1rem; } .post_link:hover { background-color: floralwhite; color: #131313; box-shadow: 4px 4px 0 #131313; } }
+
 header { position: sticky; top: 0; background-color: floralwhite; }
 
 nav { display: flex; align-items: center; justify-content: space-between; height: 5rem; }
@@ -48,9 +52,11 @@ nav ul li { padding: 1rem; }
 
 @media screen and (min-width: 600px) { .logo { margin: 0 2rem; } .hamburguer { display: none; margin: 0 2rem; } .menu_wrapper { position: static; display: flex; align-items: center; flex-flow: row wrap; width: auto; } }
 
-.thumb { height: 70%; }
+.thumb { height: none; }
 
-.post_description { height: 30%; }
+.post_description { height: auto; }
+
+@media screen and (min-width: 600px) { .thumb { height: 70%; } .post_description { height: 30%; } }
 
 .hero { display: flex; flex-flow: column nowrap; justify-content: space-evenly; align-items: center; padding: 24px; height: auto; }
 
