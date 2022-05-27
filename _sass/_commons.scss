@@ -17,7 +17,7 @@ ol {
 img {
   object-fit: cover;
   width: 100%;
-  border: $img_border solid $text-color;
+  border: $border;
 }
 
 .svg {
@@ -40,13 +40,41 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto, 1fr);
-  gap: 24px;
-  margin: 24px;
+  gap: $spa-40;
+  margin: $spa-24;
 }
 
 .article_post {
   width: 100%;
   height: 100%;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+label {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: $mar-16 0;
+  gap: $mar-8;
+}
+
+input {
+  font-family: $primary_font;
+  padding: $mar-8;
+  border: none;
+  border-bottom: 2px solid $text-color;
+  background-color: transparent;
+}
+
+textarea {
+  font-family: $primary_font;
+  padding: $mar-8;
+  border: none;
+  border: 2px solid $text-color;
+  background-color: transparent;
 }
 
 footer {
@@ -68,9 +96,16 @@ footer {
 
   .logo {
     &_footer {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       width: $mar-24;
       height: $mar-24;
     }
+  }
+
+  .svg {
+    border: none;
   }
 
   footer {

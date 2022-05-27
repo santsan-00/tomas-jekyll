@@ -14,9 +14,9 @@ nav {
 
 //Hamburguer
 .hamburguer {
+  @extend .svg;
   width: $spa-40;
   height: $spa-40;
-  background: red;
   z-index: 9;
 }
 

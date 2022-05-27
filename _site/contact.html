@@ -24,7 +24,7 @@
       
     </a>
     <!-- Menu Button -->
-    <i class="hamburguer"></i>
+    <img class="hamburguer" src="/assets/images/hamburger.svg" />
 
     <ul class="closed menu_wrapper">
       <li>
@@ -48,10 +48,10 @@
 </header>
 
 
-    <img src="/assets/images/contact.jpg" alt="" />
-<div>
-  <h1>Let's Connect!</h1>
-  <div>
+    <section class="hero">
+  <img class="contact_img" src="/assets/images/contact.jpg" alt="" />
+  <div class="text_wrapper">
+    <h1>Let's Connect!</h1>
     <ul>
       
       <li>
@@ -76,39 +76,38 @@
       </li>
       
     </ul>
+    <div>
+      <h2>Contact Form</h4>
+      <form>
+        <label>Full Name
+          <input 
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+          />
+        </label>
+        <label>
+          Email
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            placeholder="Email Address"
+          />
+        </label>
+        <label>
+          Write your message...
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Type Message Here"
+            ></textarea>
+        </label>
+        <button type="submit">Send Submission</button>
+      </form>
   </div>
-  <div>
-    <h2>Contact Form</h4>
-    <form>
-      <label>Full Name
-        <input 
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Full Name"
-        />
-      </label>
-      <label>
-        Email
-        <input
-          type="email"
-          id="email"
-          name="_replyto"
-          placeholder="Email Address"
-        />
-      </label>
-      <label>
-        Write your message...
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Type Message Here"
-          ></textarea>
-      </label>
-          <button type="submit">Send Submission</button>
-        </div>
-    </form>
-</div>
+</section>
 
     <footer>
   <a href="/about">Copywright® Tomás Santos</a>

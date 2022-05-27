@@ -6,6 +6,15 @@
   color: $bg-color;
 }
 
+.card_link {
+  @extend .post_link;
+  font-size: $spa-24;
+}
+
+form button {
+  @extend .post_link;
+}
+
 @media screen and (min-width: 600px) {
   .post_link {
     padding: $mar-8 $mar-16;
@@ -15,9 +24,9 @@
     color: $text-color;
     box-shadow: 4px 4px 0 $text-color;
   }
-}
 
-.card_link {
-  @extend .post_link;
-  width: 100%;
+  .card_link {
+    @extend .post_link;
+    font-size: $spa-24;
+  }
 }
