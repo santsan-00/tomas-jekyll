@@ -9,7 +9,7 @@ blockquote { font-style: italic; margin-left: 16px; }
 
 img { object-fit: cover; width: 100%; border: 4px solid #131313; }
 
-.svg, .hamburguer { border: none; }
+.svg, .hamburguer { border: none; width: 24px; height: 24px; }
 
 .logo, .logo_footer { width: 40px; height: 40px; border: none; }
 
@@ -18,14 +18,6 @@ img { object-fit: cover; width: 100%; border: 4px solid #131313; }
 .portfolio { display: grid; grid-template-columns: 1fr; grid-template-rows: repeat(auto, 1fr); gap: 40px; margin: 24px; }
 
 .article_post { width: 100%; height: 100%; }
-
-form { display: flex; flex-flow: column nowrap; }
-
-label { display: flex; flex-flow: column nowrap; margin: 1rem 0; gap: 0.5rem; }
-
-input { font-family: "Poppins", sans-serif; padding: 0.5rem; border: none; border-bottom: 2px solid #131313; background-color: transparent; }
-
-textarea { font-family: "Poppins", sans-serif; padding: 0.5rem; border: none; border: 2px solid #131313; background-color: transparent; }
 
 footer { display: flex; justify-content: space-between; align-items: center; flex-flow: column nowrap; padding: 24px; height: 20vh; }
 
@@ -54,7 +46,13 @@ h4 { font-size: 24px; margin-bottom: 16px; }
 
 .card_link { font-size: 24px; }
 
-@media screen and (min-width: 600px) { .post_link, .card_link, form button { padding: 0.5rem 1rem; } .post_link:hover, .card_link:hover, form button:hover { background-color: floralwhite; color: #131313; box-shadow: 4px 4px 0 #131313; } .card_link { font-size: 24px; } }
+@media screen and (min-width: 600px) { .post_link, .card_link, form button { padding: 0.5rem 1rem; transition: 300ms ease-in-out; } .post_link:hover, .card_link:hover, form button:hover { background-color: floralwhite; color: #131313; box-shadow: 4px 4px 0 #131313; transition: 300ms ease-in-out; } .card_link { font-size: 24px; } }
+
+figure { overflow: hidden; }
+
+.thumb { transition: 300ms; }
+
+.thumb:hover { transform: scale(1.1); }
 
 header { position: sticky; top: 0; background-color: floralwhite; padding: 0 16px; }
 
@@ -74,23 +72,29 @@ nav ul li { padding: 16px; }
 
 .post_description { height: auto; }
 
+.post_description h2 { font-size: 32px; margin-top: 16px; margin-bottom: 24px; }
+
 .page_post { max-width: 1114px; margin: 16px; }
 
 .page_post img { margin-bottom: 24px; }
 
-@media screen and (min-width: 600px) { .thumb { height: 70%; } .post_description { height: 30%; } .page_post { width: 80%; margin: auto; } .page_post img { margin-bottom: 24px; } }
+@media screen and (min-width: 600px) { .thumb { height: 70%; } .post_description { height: 30%; } .post_description h2 { font-size: 32px; margin-top: 16px; margin-bottom: 24px; } .page_post { width: 80%; margin: auto; } .page_post img { margin-bottom: 24px; } }
 
-.hero, .hero_contact, .hero_about { display: flex; flex-flow: column nowrap; justify-content: space-evenly; align-items: center; padding: 24px; height: auto; }
+.hero, .hero_contact, .hero_about { display: flex; flex-flow: column nowrap; justify-content: space-evenly; align-items: center; padding: 24px; height: auto; border-top: 4px solid #131313; border-bottom: 4px solid #131313; }
 
 .hero p, .hero_contact p, .hero_about p, .hero blockquote, .hero_contact blockquote, .hero_about blockquote { font-size: 24px; }
 
-.text_wrapper { width: 100%; }
+.text_wrapper { width: 100%; margin: 2rem; }
+
+.more_projects { display: flex; flex-flow: column nowrap; justify-content: center; align-items: center; }
+
+.more_projects h2 { text-align: center; }
 
 .hero img, .hero_contact img, .hero_about img { width: 100%; height: none; }
 
 .hero_about { height: auto; align-items: flex-start; }
 
-.hero_about .text_wrapper { padding: 0; }
+.hero_about .text_wrapper { padding: 0; margin: 0; }
 
 .hero_about .text_wrapper p, .hero_about .text_wrapper blockquote { font-size: 16px; }
 
@@ -98,12 +102,24 @@ nav ul li { padding: 16px; }
 
 .image_wrapper img { width: 100%; margin-bottom: 24px; }
 
+@media screen and (min-width: 600px) { .hero, .hero_contact, .hero_about { flex-direction: row; padding: 0; height: 90vh; } .hero img, .hero_contact img, .hero_about img { width: 40%; height: 100%; border: none; border-left: 4px solid #131313; } .hero_about { height: auto; padding: 4rem; } .hero_about p, .hero_about blockquote { font-size: 1rem; } .hero_about .text_wrapper { margin-right: 3rem; } .image_wrapper { width: 50%; } .image_wrapper img { margin-bottom: 2rem; width: 100%; border: 4px solid #131313; } }
+
+form { display: flex; flex-flow: column nowrap; }
+
+label { display: flex; flex-flow: column nowrap; margin: 1rem 0; gap: 0.5rem; }
+
+input { font-family: "Poppins", sans-serif; padding: 0.5rem; border: none; border-bottom: 2px solid #131313; background-color: transparent; }
+
+textarea { font-family: "Poppins", sans-serif; padding: 0.5rem; border: none; border: 2px solid #131313; background-color: transparent; }
+
 .hero_contact { height: auto; display: flex; }
+
+.socials { display: flex; align-items: center; justify-content: center; margin: 1rem; }
+
+.socials .svg, .socials .hamburguer { width: 20px; height: 20px; margin: 0 0.5rem; }
 
 .form_wrapper { width: 100%; gap: 1rem; display: flex; flex-flow: column nowrap; }
 
 .form_wrapper label { width: 100%; }
 
-@media screen and (min-width: 600px) { .hero, .hero_about, .hero_contact { flex-direction: row; padding: 0; border: none; border-top: 4px solid #131313; border-bottom: 4px solid #131313; height: 90vh; } .hero img, .hero_about img, .hero_contact img { width: 40%; height: 100%; border: none; border-left: 4px solid #131313; } .hero_about { height: auto; padding: 4rem; } .hero_about p, .hero_about blockquote { font-size: 1rem; } .hero_about .text_wrapper { margin-right: 3rem; } .image_wrapper { width: 50%; } .image_wrapper img { margin-bottom: 2rem; width: 100%; border: 4px solid #131313; } .hero_contact { flex-flow: column nowrap; } .hero_contact .svg, .hero_contact .hamburguer { border: 0; } .hero_contact .text_wrapper { margin: 2rem; } .form_wrapper { display: flex; flex-flow: row nowrap; } }
-
-/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 600px) { .hero_contact { flex-flow: column nowrap; padding: 2rem; } .socials .svg, .socials .hamburguer { border: 0; width: 1.25rem; height: 1.25rem; margin: 0 0.5rem; } .socials li { margin: 0 0.5rem; } .hero_contact .text_wrapper { margin: 2rem 2rem; } .form_wrapper { display: flex; flex-flow: row nowrap; } }

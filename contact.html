@@ -8,8 +8,8 @@ title: Contact
   <div class="text_wrapper">
       <ul>
         {% for link in site.data.settings.social %}
-        <li>
-          <img class='svg' src='{{ link.svg }}' />
+        <li class="socials">
+          <img class='svg' src='/assets/images/{{ link.svg }}' />
           <a href="{{ link.link }}"
             >{{ link.username }}</a
           >
@@ -48,5 +48,5 @@ title: Contact
             <button type="submit">Send Submission</button>
           </div>
       </form>
-    </div>
-</section>
+  </div>
+</section>\

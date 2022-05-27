@@ -16,15 +16,15 @@ social:
       name: instagram,
       username: "@santsan00",
       link: "https://www.instagram.com/santsan00/",
-      svg: "",
+      svg: "instagram.svg",
     }
   - {
       name: linkedin,
       username: "@tomassantos7",
       link: "https://www.linkedin.com/in/tom%C3%A1s-santos-7b438322b/",
-      svg: "",
+      svg: "linkedin.svg",
     }
-  - { name: email, username: "tomaacs2000@gmail.com", svg: "" }
+  - { name: email, username: "tomaacs2000@gmail.com", svg: "email.svg" }
 
 ---
 

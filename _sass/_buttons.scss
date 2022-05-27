@@ -18,11 +18,14 @@ form button {
 @media screen and (min-width: 600px) {
   .post_link {
     padding: $mar-8 $mar-16;
+    transition: 300ms ease-in-out;
   }
   .post_link:hover {
     background-color: $bg-color;
     color: $text-color;
     box-shadow: 4px 4px 0 $text-color;
+
+    transition: 300ms ease-in-out;
   }
 
   .card_link {

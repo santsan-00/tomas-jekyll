@@ -4,6 +4,12 @@
 
 .post_description {
   height: auto;
+
+  h2 {
+    font-size: $spa-32;
+    margin-top: $spa-16;
+    margin-bottom: $spa-24;
+  }
 }
 
 .page_post {
@@ -22,6 +28,12 @@
 
   .post_description {
     height: 30%;
+
+    h2 {
+      font-size: $spa-32;
+      margin-top: $spa-16;
+      margin-bottom: $spa-24;
+    }
   }
 
   .page_post {

@@ -5,6 +5,8 @@
   align-items: center;
   padding: 24px;
   height: auto;
+  border-top: $img_border solid $text-color;
+  border-bottom: $img_border solid $text-color;
 
   p {
     font-size: 24px;
@@ -13,6 +15,18 @@
 
 .text_wrapper {
   width: 100%;
+  margin: $mar-24;
+}
+
+.more_projects {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .hero img {
@@ -29,6 +43,7 @@
 
 .hero_about .text_wrapper {
   padding: 0;
+  margin: 0;
 
   p {
     font-size: 16px;
@@ -44,31 +59,10 @@
   margin-bottom: $spa-24;
 }
 
-// Contact
-.hero_contact {
-  @extend .hero;
-  height: auto;
-  display: flex;
-}
-
-.form_wrapper {
-  width: 100%;
-  gap: $mar-16;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.form_wrapper label {
-  width: 100%;
-}
-
 @media screen and (min-width: 600px) {
   .hero {
     flex-direction: row;
     padding: 0;
-    border: none;
-    border-top: $img_border solid $text-color;
-    border-bottom: $img_border solid $text-color;
     height: 90vh;
   }
 
@@ -101,23 +95,5 @@
     margin-bottom: $mar-24;
     width: 100%;
     border: $img_border solid $text-color;
-  }
-
-  // Contact
-  .hero_contact {
-    flex-flow: column nowrap;
-  }
-
-  .hero_contact .svg {
-    border: 0;
-  }
-
-  .hero_contact .text_wrapper {
-    margin: $mar-24;
-  }
-
-  .form_wrapper {
-    display: flex;
-    flex-flow: row nowrap;
   }
 }

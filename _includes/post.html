@@ -1,13 +1,15 @@
 <article class="article_post">
-  <img
-    class="thumb"
-    src="{{ post.image | relative_url }}"
-    alt="{{ post.title }}"
-  />
+  <figure>
+    <img
+      class="thumb"
+      src="{{ post.image | relative_url }}"
+      alt="{{ post.title }}"
+    />
+  </figure>
   <div class="post_description">
-    <h4>
+    <h2>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h4>
+    </h2>
     <p>
       {% assign curlyend = '}' %}{{ post.excerpt | markdownify | strip_html |
       replace: "{% include JB/setup %", "" | replace: curlyend, "" |

@@ -28,6 +28,8 @@ img {
 
 .svg {
   border: none;
+  width: $spa-24;
+  height: $spa-24;
 }
 
 .logo {
@@ -53,34 +55,6 @@ img {
 .article_post {
   width: 100%;
   height: 100%;
-}
-
-form {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-label {
-  display: flex;
-  flex-flow: column nowrap;
-  margin: $mar-16 0;
-  gap: $mar-8;
-}
-
-input {
-  font-family: $primary_font;
-  padding: $mar-8;
-  border: none;
-  border-bottom: 2px solid $text-color;
-  background-color: transparent;
-}
-
-textarea {
-  font-family: $primary_font;
-  padding: $mar-8;
-  border: none;
-  border: 2px solid $text-color;
-  background-color: transparent;
 }
 
 footer {

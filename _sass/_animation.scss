@@ -1,0 +1,11 @@
+figure {
+  overflow: hidden;
+}
+
+.thumb {
+  transition: 300ms;
+}
+
+.thumb:hover {
+  transform: scale(1.1);
+}
