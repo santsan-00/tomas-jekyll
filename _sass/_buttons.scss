@@ -29,7 +29,6 @@ form button {
   }
 
   .card_link {
-    @extend .post_link;
     font-size: $spa-24;
   }
 }
