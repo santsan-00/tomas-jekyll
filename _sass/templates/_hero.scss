@@ -20,10 +20,6 @@
   height: none;
 }
 
-.hero .svg {
-  border: none;
-}
-
 // About
 .hero_about {
   @extend .hero;
@@ -49,9 +45,21 @@
 }
 
 // Contact
+.hero_contact {
+  @extend .hero;
+  height: auto;
+  display: flex;
+}
 
-.contact_img {
-  @extend img;
+.form_wrapper {
+  width: 100%;
+  gap: $mar-16;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form_wrapper label {
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
@@ -69,10 +77,6 @@
     height: 100%;
     border: none;
     border-left: $img_border solid $text-color;
-  }
-
-  .text_wrapper {
-    padding-right: $mar-32;
   }
 
   // About
@@ -100,13 +104,20 @@
   }
 
   // Contact
-
-  .hero .contact_img {
-    border-left: 0;
-    border-right: $img_border solid $text-color;
+  .hero_contact {
+    flex-flow: column nowrap;
   }
 
-  .hero .text_wrapper {
-    padding-left: $mar-32;
+  .hero_contact .svg {
+    border: 0;
+  }
+
+  .hero_contact .text_wrapper {
+    margin: $mar-24;
+  }
+
+  .form_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
   }
 }

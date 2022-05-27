@@ -10,11 +10,8 @@
 
     {% include header.html %}
 
-    <article>
-      <section class="post_hero">
-        <img src="{{ site.posts.image }}" alt="">
-        <h1>{{ page.title }}</h1>
-      </section>
+    <article class="page_post">
+      <h1>{{ page.title }}</h1>
       {{ content }}
     </article>
 

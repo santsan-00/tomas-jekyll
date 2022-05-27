@@ -3,40 +3,40 @@ layout: default
 title: Contact
 ---
 
-<section class="hero">
-  <img class="contact_img" src="/assets/images/contact.jpg" alt="" />
+<section class="hero_contact">
+  <h1>Let's Connect!</h1>
   <div class="text_wrapper">
-    <h1>Let's Connect!</h1>
-    <ul>
-      {% for link in site.data.settings.social %}
-      <li>
-        <img class='svg' src='{{ link.svg }}' />
-        <a href="{{ link.link }}"
-          >{{ link.username }}</a
-        >
-      </li>
-      {% endfor %}
-    </ul>
+      <ul>
+        {% for link in site.data.settings.social %}
+        <li>
+          <img class='svg' src='{{ link.svg }}' />
+          <a href="{{ link.link }}"
+            >{{ link.username }}</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
     <div>
-      <h2>Contact Form</h4>
-      <form>
-        <label>Full Name
-          <input 
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Full Name"
-          />
-        </label>
-        <label>
-          Email
-          <input
-            type="email"
-            id="email"
-            name="_replyto"
-            placeholder="Email Address"
-          />
-        </label>
+        <form>
+          <div class="form_wrapper">
+            <label>Full Name
+              <input 
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full Name"
+              />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                placeholder="Email Address"
+              />
+            </label>
+        </div>
         <label>
           Write your message...
           <textarea
@@ -45,7 +45,8 @@ title: Contact
             placeholder="Type Message Here"
             ></textarea>
         </label>
-        <button type="submit">Send Submission</button>
+            <button type="submit">Send Submission</button>
+          </div>
       </form>
-  </div>
+    </div>
 </section>

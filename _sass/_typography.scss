@@ -24,26 +24,42 @@ a {
 
 h1 {
   font-size: 48px;
-  margin-bottom: 24px;
+  margin-bottom: $spa-24;
 }
 
 h2 {
-  font-size: 40px;
-  margin-bottom: 24px;
+  font-size: $spa-40;
+  margin-bottom: $spa-24;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: $spa-32;
+  margin-bottom: $spa-16;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: $spa-24;
+  margin-bottom: $spa-16;
 }
 
-h5 {
-  font-size: 20px;
-}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: $mar-40;
+    margin-bottom: $mar-24;
+  }
 
-h6 {
-  font-size: 16px;
+  h2 {
+    font-size: $mar-32;
+    margin-bottom: $mar-24;
+  }
+
+  h3 {
+    font-size: $mar-24;
+    margin-bottom: $mar-16;
+  }
+
+  h4 {
+    font-size: $mar-16;
+    margin-bottom: $mar-16;
+  }
 }
