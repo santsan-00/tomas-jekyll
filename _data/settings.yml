@@ -1,10 +1,6 @@
 ---
 title: Tomás Santos
 logo: "logo.svg"
-description: this is meta description
-email: tomaacs2000@gmail.com
-phone: +351 961 013 815
-copyright: Copyright &copy; 2022 Designed and Developed by Tomás Santos™.
 
 menu:
   - { name: About, link: "/about" }
